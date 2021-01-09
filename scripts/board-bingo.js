@@ -1,7 +1,7 @@
 let text;
 let gameColumn = ["b", "i", "n", "g", "o"];
 
-function writeHtml() {
+function fillBoard() {
   for (let j = 0; j < 5; j++) {
     for (let i = 0; i < 5; i++) {
       if (j === 2 && i === 2) {
@@ -52,4 +52,4 @@ function numRandom(minNum, maxNum) {
   return randomNumber;
 }
 
-writeHtml();
+fillBoard();
