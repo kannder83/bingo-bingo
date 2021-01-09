@@ -1,12 +1,20 @@
 :root {
   --color-orange-prim: #ff7f02;
   --color-red-sec: #f83938;
+  --color-yelow-sec: #ffb402;
+  --color-green-sec: #00a23e;
+  --color-blue-sec: #018aea;
+  --color-purple-sec: #aa1eab;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Potta One", cursive;
 }
 
 .container {
@@ -19,9 +27,9 @@
 
 .box-table {
   width: 400px;
-  height: 400px;
+  height: 500px;
   border: 3px outset var(--color-orange-prim);
-  border-radius: 5px;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 6fr;
@@ -48,7 +56,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   font-size: 40px;
@@ -66,7 +73,11 @@
 
 .box-number {
   border-radius: 5px;
-  background: hotpink;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
 }
 
 /*----------------------------->>> Colores de Fondo. */
@@ -83,6 +94,46 @@
 }
 
 .bg-red {
-  border: 2px solid var(--color-red-sec);
-  background: var(--color-red-sec);
+  border: 2px outset var(--color-red-sec);
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.8995973389355743) 0%,
+    rgba(248, 57, 56, 1) 50%
+  );
+}
+
+.bg-yellow {
+  border: 2px outset var(--color-yelow-sec);
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.8995973389355743) 0%,
+    rgba(255, 180, 2, 1) 50%
+  );
+}
+
+.bg-green {
+  border: 2px outset var(--color-green-sec);
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.8995973389355743) 0%,
+    rgba(0, 162, 62, 1) 50%
+  );
+}
+
+.bg-blue {
+  border: 2px outset var(--color-blue-sec);
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.8995973389355743) 0%,
+    rgba(1, 138, 234, 1) 50%
+  );
+}
+
+.bg-purple {
+  border: 2px outset var(--color-purple-sec);
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.8995973389355743) 0%,
+    rgba(170, 30, 171, 1) 50%
+  );
 }
